@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { UsersModule } from './modules/users/users.module';
@@ -13,6 +12,7 @@ import { OrdersModule } from './modules/orders/orders.module';
 import { MenuItemOptionsModule } from './modules/menu.item.options/menu.item.options.module';
 import { OrderDetailModule } from './modules/order.detail/order.detail.module';
 import { AuthModule } from './auth/auth.module';
+import { AppService } from './app.service';
 @Module({
   imports: [
     UsersModule,
